@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="12dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Search_fragment"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Keyword"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="5dp"
+
+        android:hint="Enter Keyword"
+        />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+
+        android:layout_height="wrap_content"
+        android:text="Category" />
+
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_marginTop="2dp"
+
+        android:layout_height="wrap_content"
+        android:entries="@array/categories"/>
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_marginTop="2dp"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Distance" />
+
+    <EditText
+        android:id="@+id/distance"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="number"
+        android:text="10" />
+
+    <Spinner
+        android:id="@+id/units_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/units"/>
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:text="From" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:id="@+id/radiogroup"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/current"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:checked="true"
+
+            android:text="Current" />
+
+        <RadioButton
+            android:id="@+id/other_loc"
+            android:layout_width="match_parent"
+            android:layout_height="22dp"
+            android:text="Other. Please specify " />
+
+        <EditText
+            android:id="@+id/loc_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:layout_marginStart="26dp"
+            android:enabled="false"
+            android:hint="Type in the Location"
+            android:inputType="textPersonName"
+             />
+
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A8A8A8"
+            android:text="SEARCH" />
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="#A8A8A8"
+            android:text="CLEAR" />
+    </LinearLayout>
+
+</LinearLayout>
